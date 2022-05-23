@@ -165,3 +165,33 @@ The "developer" profile for kanidmd will automatically use the pkg output in thi
 Setting different developer profiles while building is done by setting the environment variable KANIDM_BUILD_PROFILE to one of the bare filename of the TOML files in `/profiles`. 
 
 For example: `KANIDM_BUILD_PROFILE=release_suse_generic cargo build --release --bin kanidmd`
+
+### Build a kanidm container
+
+Build a container with the current branch using:
+
+    make <TARGET>
+
+Check `make help` for a list of valid targets.
+
+The following environment variables control the build:
+
+|ENV variable|Definition|Default|
+|-|-|-|
+|`IMAGE_BASE`|Base location of the container image.|`kanidm`|
+|`IMAGE_VERSION`|Determines the container's tag.|None|
+|`CONTAINER_TOOL_ARGS`|Specify extra options for the container build tool.|None|
+|`IMAGE_ARCH`|Passed to `--platforms` when the container is built.|`linux/amd64,linux/arm64`|
+|`CONTAINER_BUILD_ARGS`|Override default ARG settings during the container build.|None|
+|`CONTAINER_TOOL`|Use an alternative container build tool.|`docker`|
+|`BOOK_VERSION`|Sets version used when building the documentation book.|`master`|
+
+#### Container build examples
+
+Build a `kanidm` container using `podman`:
+
+    CONTAINER_TOOL=podman make build/kanidmd
+
+Build a `kanidm` container and use a redis build cache:
+
+    CONTAINER_BUILD_ARGS="--build-arg "SCCACHE_REDIS=redis://redis.dev.blackhats.net.au:6379"" make build/kanidmd
