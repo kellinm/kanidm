@@ -1829,9 +1829,9 @@ checksum = "b9e0384b61958566e926dc50660321d12159025e767c18e043daf26b70104c39"
 
 [[package]]
 name = "idlset"
-version = "0.2.3"
+version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d1612d42a5e18df31a30916d2005ff41981c1d606b9180ef9bd1dbd919fa4eac"
+checksum = "340756d15be4b22d5e501bad90a9f68fcdc6b9b7d2f6d6afe350645e9839dac6"
 dependencies = [
  "serde",
  "serde_derive",
