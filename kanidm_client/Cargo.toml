@@ -19,6 +19,6 @@ serde_json = "^1.0.80"
 toml = "^0.5.9"
 uuid = { version = "^1.0.0", features = ["serde", "v4"] }
 url = { version = "^2.2.2", features = ["serde"] }
-webauthn-rs = "^0.3.2"
+webauthn-rs = "^0.4.3"
 tokio = { version = "^1.18.0", features = ["rt", "net", "time", "macros", "sync", "signal"] }
 
