@@ -23,7 +23,7 @@ tracing-serde = "^0.1.3"
 jemallocator = { version = "0.3.2", optional = true }
 either = "^1.6.1"
 
-url = { version = "^2.2.2", features = ["serde"] }
+url = { version = "^2.3.0", features = ["serde"] }
 tide = "^0.16.0"
 async-trait = "^0.1.53"
 fernet = { version = "^0.1.4", features = ["fernet_danger_timestamps"] }
