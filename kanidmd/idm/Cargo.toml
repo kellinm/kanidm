@@ -27,7 +27,7 @@ url = { version = "^2.2.2", features = ["serde"] }
 tide = "^0.16.0"
 async-trait = "^0.1.53"
 fernet = { version = "^0.1.4", features = ["fernet_danger_timestamps"] }
-compact_jwt = "^0.2.1"
+compact_jwt = "^0.2.8"
 
 async-std = { version = "^1.11.0", features = ["tokio1"] }
 
