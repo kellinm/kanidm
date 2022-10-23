@@ -39,7 +39,7 @@ saffron = "^0.1.0"
 regex = "^1.5.5"
 lazy_static = "^1.4.0"
 
-futures = "^0.3.21"
+futures = "^0.3.25"
 futures-util = "^0.3.21"
 tokio = { version = "^1.18.0", features = ["net", "sync", "time"] }
 tokio-util = { version = "^0.7.2", features = ["codec"] }
