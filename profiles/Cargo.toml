@@ -16,7 +16,7 @@ path = "src/lib.rs"
 
 [dependencies]
 serde = { version = "^1.0.137", features = ["derive"] }
-toml = "^0.5.9"
+toml = "^0.5.10"
 base64 = "^0.13.0"
 
 [build-dependencies]

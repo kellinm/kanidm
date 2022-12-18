@@ -23,7 +23,7 @@ structopt = { version = "^0.3.26", default-features = false }
 users = "^0.11.0"
 serde = { version = "^1.0.137", features = ["derive"] }
 tokio = { version = "^1.18.0", features = ["rt-multi-thread", "macros", "signal"] }
-toml = "0.5.9"
+toml = "0.5.10"
 
 [build-dependencies]
 serde = { version = "1", features = ["derive"] }
