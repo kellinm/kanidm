@@ -38,7 +38,7 @@ tokio-openssl = "^0.6.3"
 futures-util = { version = "^0.3.21", features = ["sink"] }
 openssl = "^0.10.38"
 
-ldap3_proto = "^0.2.3"
+ldap3_proto = "^0.3.1"
 
 crossbeam = "0.8.1"
 
