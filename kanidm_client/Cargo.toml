@@ -16,7 +16,7 @@ reqwest = { version = "^0.11.10", features=["cookies", "json", "native-tls"] }
 kanidm_proto = { path = "../kanidm_proto", version = "1.1.0-alpha.8" }
 serde = { version = "^1.0.137", features = ["derive"] }
 serde_json = "^1.0.80"
-toml = "^0.5.9"
+toml = "^0.7.1"
 uuid = { version = "^1.0.0", features = ["serde", "v4"] }
 url = { version = "^2.2.2", features = ["serde"] }
 webauthn-rs = "^0.3.2"
