@@ -83,7 +83,7 @@ validator = { version = "^0.14.0", features = ["phone"] }
 touch = "^0.0.1"
 filetime = "^0.2.16"
 
-num_enum = "^0.5.7"
+num_enum = "^0.5.10"
 
 [features]
 # default = [ "libsqlite3-sys/bundled", "openssl/vendored" ]
